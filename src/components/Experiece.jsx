@@ -12,24 +12,17 @@ const Experience = () => {
             Experience
           </p>
         </div>
-        <p className="text-xl mt-20">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-          deserunt illum mollitia officiis qui exercitationem perferendis neque
-          quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-          iste, totam fugiat recusandae rerum laborum perferendis molestiae
-          aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-          ab mollitia voluptatibus, a nostrum eveniet laborum!
-        </p>
-
-        <br />
-        
+        <div className="pb-8">
+          <p className="text-2xl font-bold inline border-b-4 border-gray-500">
+            Simrik Technologies Enterprieses(Apr 2020-Apr 2021)
+          </p>
+        </div>
         <p className="text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          pariatur, vel similique sint, nobis aspernatur ut praesentium
-          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-          magni quo! Eum cupiditate debitis labore.
+          <ol>
+            <li>1.Responsible for Frontend webpage development using HTMl and CSS</li>
+            <li>2.Responsible for creating wordpress sites with attractive design and functionality </li>
+            <li>3.Learned the working mechanism of JS library called React js</li>
+          </ol>
         </p>
       </div>
     </div>

@@ -14,13 +14,13 @@ const Home = () => {
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
             I'm Frontend Developer
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">
+          <p className="text-white py-4 max-w-md">
             To work in an IT firm with a professional work driven environment where i can utilize and implement my knowledge and skills which would enable me as an IT graduate to grow while fulfilling organization's goal.
           </p>
 
           <div>
             <Link
-              to="projects"
+              to="Projects"
               smooth
               duration={500}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"

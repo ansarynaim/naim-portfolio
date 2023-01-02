@@ -1,36 +1,48 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import gitFire from "../assets/portfolio/gitFire.png";
+import textManipulator from "../assets/portfolio/textManipulator.png";
+import todoApp from "../assets/portfolio/todoApp.png";
+import funWithTraingle from "../assets/portfolio/funWithTraingle.png";
+import minionTranslator from "../assets/portfolio/minionTranslator.png";
+import cardRegister from "../assets/portfolio/cardRegister.png";
 
 const Projects = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: gitFire,
+      live:"https://git-fire-app.netlify.app/",
+      source:"https://github.com/ansarynaim/git-fire-app",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: textManipulator,
+      live:"https://ansarynaim.github.io/Text-Manipulator/",
+      source:"https://github.com/ansarynaim/Text-Manipulator",
     },
     {
       id: 3,
-      src: navbar,
+      src: todoApp,
+      live:"https://ansarynaim.github.io/todo-context-api/",
+      source:"https://github.com/ansarynaim/todo-context-api",
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: funWithTraingle,
+      live:"https://fun-with-traingles92.netlify.app/",
+      source:"https://github.com/ansarynaim/Fun-with-triangles",
     },
     {
       id: 5,
-      src: installNode,
+      src: minionTranslator,
+      live:"https://minions-lang-translator92.netlify.app/",
+      source:"https://github.com/ansarynaim/Minion-language-convertor",
     },
     {
       id: 6,
-      src: reactWeather,
+      src: cardRegister,
+      live:"https://cash-register-manager92.netlify.app/",
+      source:"https://github.com/ansarynaim/Cash-Register-Manager",
     },
   ];
 
@@ -44,11 +56,11 @@ const Projects = () => {
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Projects
           </p>
-          <p className="py-6">Check out some of my work right here</p>
+          <p className="py-6">The best way to learn something is to build and implement it.</p>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src,live,source }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -56,12 +68,13 @@ const Projects = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
-                </button>
+                <a href={live}><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  Live
+                </button></a>
+                <a href={source}> <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  Source
+                </button></a>
+               
               </div>
             </div>
           ))}

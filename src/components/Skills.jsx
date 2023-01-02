@@ -3,11 +3,13 @@ import React from "react";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
-import reactImage from "../assets/react.png";
-import nextjs from "../assets/nextjs.png";
-import graphql from "../assets/graphql.png";
-import github from "../assets/github.png";
+import bootstrap from "../assets/bootstrap.png";
 import tailwind from "../assets/tailwind.png";
+import reactImage from "../assets/react.png";
+import wordpress from "../assets/wordpress.png";
+import firebase from "../assets/firebase.png";
+import github from "../assets/github.png";
+
 
 const Skills = () => {
   const techs = [
@@ -31,8 +33,8 @@ const Skills = () => {
     },
     {
       id: 4,
-      src: reactImage,
-      title: "React",
+      src: bootstrap,
+      title: "Bootstrap",
       style: "shadow-blue-600",
     },
     {
@@ -43,22 +45,28 @@ const Skills = () => {
     },
     {
       id: 6,
-      src: nextjs,
-      title: "Next JS",
+      src: reactImage,
+      title: "React JS",
       style: "shadow-white",
     },
     {
       id: 7,
-      src: graphql,
-      title: "GraphQL",
+      src: wordpress,
+      title: "Wordpress",
       style: "shadow-pink-400",
     },
     {
       id: 8,
-      src: github,
-      title: "GitHub",
+      src: firebase,
+      title: "Firebase",
       style: "shadow-gray-400",
     },
+    {
+      id: 9,
+      src: github,
+      title: "Github",
+      style: "shadow-gray-400",
+    }
   ];
 
   return (
@@ -71,7 +79,7 @@ const Skills = () => {
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Skills
           </p>
-          <p className="py-6">These are the technologies I've worked with</p>
+          <p className="py-6">These are the technologies I'm familiar with.</p>
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
