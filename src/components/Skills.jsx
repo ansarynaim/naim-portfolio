@@ -74,7 +74,7 @@ const Skills = () => {
       name="Skills"
       className="w-full h-full bg-gradient-to-b from-gray-800 to-black"
     >
-      <div className="w-1/2 sm:w-full h-1/2 md:h-full mx-auto p-4 flex flex-col justify-center text-white">
+      <div className="w-1/2 sm:w-full h-1/2 md:h-full mx-auto p-4 flex flex-col justify-center items-center text-white">
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Skills
@@ -82,7 +82,7 @@ const Skills = () => {
           <p className="py-6">These are the technologies I'm familiar with.</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        <div className="w-full grid sm:grid-cols-1 md:grid-cols-3 gap-5 text-center py-8 px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}

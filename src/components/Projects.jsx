@@ -50,7 +50,7 @@ const Projects = () => {
     <div
       name="Projects"
       className="w-full h-full bg-gradient-to-b from-black to-gray-800  text-white ">
-      <div className="w-1/2 sm:w-full h-1/2 md:h-full p-4 mx-auto flex flex-col justify-center">
+      <div className="w-1/2 sm:w-full h-1/2 md:h-full p-4 mx-auto flex flex-col justify-center items-center">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Projects
@@ -58,7 +58,7 @@ const Projects = () => {
           <p className="py-6">The best way to learn something is to build and implement it.</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src,live,source }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
