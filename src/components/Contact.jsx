@@ -4,9 +4,9 @@ const Contact = () => {
   return (
     <div
       name="Contact"
-      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+      className="w-full h-full bg-gradient-to-b from-black to-gray-800 p-4 text-white"
     >
-      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+      <div className="w-1/2 sm:w-full h-1/2 md:h-full flex flex-col p-4 justify-center  mx-auto">
         <div className="pb-8">
           <p className="pt-4 text-4xl font-bold inline border-b-4 border-gray-500">
             Contact Me
@@ -16,7 +16,7 @@ const Contact = () => {
 
         <div className=" flex justify-center items-center">
           <form
-            action="https://getform.io/f/61c99527-2b15-42cf-9b55-ad37d2f7daa6"
+            action="https://getform.io/f/71bd9095-1325-4649-80af-e280b956e83b"
             method="POST"
             className=" flex flex-col w-full md:w-1/2"
           >
